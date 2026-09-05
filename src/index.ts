@@ -21,7 +21,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const style = 'stellars_jupyterlab_darcula_theme/index.css';
 
     manager.register({
-      name: 'Concrete Dark Theme',
+      name: 'Galaxa Dark Theme - Concrete',
       themeScrollbars: true,
       isLight: false,
       load: () => manager.loadCSS(style),
