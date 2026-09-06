@@ -1,5 +1,5 @@
 {
   "packageManager": "python",
-  "packageName": "stellars_jupyterlab_darcula_theme",
-  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package stellars_jupyterlab_darcula_theme"
+  "packageName": "galaxalabs_jupyterlab_titanium_dark_theme",
+  "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package galaxalabs_jupyterlab_titanium_dark_theme"
 }

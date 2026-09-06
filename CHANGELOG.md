@@ -4,6 +4,13 @@
 
 <!-- <END NEW CHANGELOG ENTRY> -->
 
+## [1.0.52] - 2026-09-06
+
+### Changed
+
+- Theme menu entry renamed to `Galaxa Dark Theme - Titanium`
+- Renamed into the galaxalabs family: the GitHub repository is now `jupyterlab_galaxalabs_titanium_dark_theme` and the npm and PyPI distributions are `galaxalabs_jupyterlab_titanium_dark_theme`. The previous distribution `stellars_jupyterlab_darcula_theme` is frozen at 1.0.51 and receives no further releases; installations of it must be replaced rather than upgraded
+
 ## [1.0.51] - 2026-09-05
 
 ### Changed

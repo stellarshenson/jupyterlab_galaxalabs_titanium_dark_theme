@@ -26,6 +26,6 @@ jobs:
       - name: Upload Distributions
         uses: actions/upload-artifact@v4
         with:
-          name: jupyterlab_stellars_darcula_theme-releaser-dist-${{ github.run_number }}
+          name: jupyterlab_galaxalabs_titanium_dark_theme-releaser-dist-${{ github.run_number }}
           path: .jupyter_releaser_checkout/dist
 

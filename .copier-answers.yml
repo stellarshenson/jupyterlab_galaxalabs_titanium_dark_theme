@@ -8,7 +8,7 @@ has_settings: false
 kind: theme
 labextension_name: '@stellars/jupyterlab_darcula_theme'
 project_short_description: IntelliJ Darcula Theme tweaked by Stellars
-python_name: stellars_jupyterlab_darcula_theme
+python_name: galaxalabs_jupyterlab_titanium_dark_theme
 repository: ''
 test: false
 

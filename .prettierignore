@@ -3,5 +3,5 @@ node_modules
 **/lib
 **/package.json
 !/package.json
-stellars_jupyterlab_darcula_theme
+galaxalabs_jupyterlab_titanium_dark_theme
 .claude
