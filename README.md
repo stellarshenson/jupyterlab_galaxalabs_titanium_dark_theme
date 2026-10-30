@@ -20,7 +20,7 @@ to the latest [jupyterlab extension template](https://github.com/jupyterlab/exte
 
 ## Requirements
 
-- JupyterLab >= 4.0.0
+- JupyterLab >= 4.6.0
 
 ## Install
 
