@@ -18,9 +18,7 @@
     "rootDir": "src",
     "strict": true,
     "strictNullChecks": true,
-    "target": "ES2018",
-    "lib": ["ES2018", "DOM"],
-    "skipLibCheck": true
+    "target": "ES2018"
   },
   "include": ["src/*"]
 }
