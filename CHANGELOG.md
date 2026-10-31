@@ -2,6 +2,16 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## [1.0.63] - 2026-10-31
+
+### Changed
+
+- Apply the template files and packages the upgrade left out
+
+### Fixed
+
+- Keep the package-lock.json indent stable between tools
+
 ## [1.0.61] - 2026-10-30
 
 ### Changed
