@@ -62,3 +62,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 20. **Task - Require Python 3.12** (v1.0.64): raised the minimum Python to 3.12 on the owner's decision<br>
     **Result**: `requires-python` in `pyproject.toml` moved to `>=3.12`, and the classifiers for Python 3.10 and 3.11 are removed. Runtime floors already excluded older versions on some extensions, where pip then installed a release from before the scoped npm rename with no error. The dependency floors stay. `uv pip compile --python-version 3.12` resolves every runtime requirement, and CI runs Python 3.13.
+
+21. **Task - Link check red on pepy.tech outage** (v1.0.64): CI `Build / Check Links` failed on the README download link `https://pepy.tech/project/galaxalabs_jupyterlab_titanium_dark_theme`<br>
+    **Result**: The gate reported `503: Service Unavailable`, and the same URL answered 503 from this workstation, so the cause was the external badge service, not the README or the Makefile 1.48 commit. Added `https://pepy.tech/.*` and `https://static.pepy.tech/.*` to `ignore_links` in `.github/workflows/build.yml`, the patterns the sibling extensions carry; every other README link stays checked. Committed as `ed8b409`. CI on that commit passed: Build 41436364150 and Check Release 41436364123 both green.
