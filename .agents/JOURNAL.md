@@ -65,3 +65,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 21. **Task - Link check red on pepy.tech outage** (v1.0.64): CI `Build / Check Links` failed on the README download link `https://pepy.tech/project/galaxalabs_jupyterlab_titanium_dark_theme`<br>
     **Result**: The gate reported `503: Service Unavailable`, and the same URL answered 503 from this workstation, so the cause was the external badge service, not the README or the Makefile 1.48 commit. Added `https://pepy.tech/.*` and `https://static.pepy.tech/.*` to `ignore_links` in `.github/workflows/build.yml`, the patterns the sibling extensions carry; every other README link stays checked. Committed as `ed8b409`. CI on that commit passed: Build 41436364150 and Check Release 41436364123 both green.
+
+22. **Task - Build lifecycle brought to Makefile 1.48** (v1.0.64): the canonical Makefile went to every extension on 2026-11-02<br>
+    **Result**: Makefile 1.48 verbatim; mrproper now removes tmp, logs, .venv, graphify-out, coverage and .pytest_cache, so a later build starts from a clean tree; install and publish are .NOTPARALLEL; the cleaned tree carries the tag CHECKPOINT_JUPYTERLAB_4.6.5_UPGRADE_PORTED_1.0.64. The same day's CI fix ignores the pepy.tech download links in the link check, because the badge service answered 503.
