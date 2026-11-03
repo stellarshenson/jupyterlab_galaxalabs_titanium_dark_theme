@@ -2,6 +2,12 @@
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## [1.0.66] - 2026-11-03
+
+### Fixed
+
+- A docked panel shows one line between its title band and its first section band, in place of two: `--jp-border-color2` follows the panel background `--jp-layout-color2`, so every `--jp-border-color2` line of the theme is #3c3f41 in place of #424242
+
 ## [1.0.64] - 2026-10-31
 
 ### Changed

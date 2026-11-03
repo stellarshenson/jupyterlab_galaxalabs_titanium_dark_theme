@@ -68,3 +68,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 22. **Task - Build lifecycle brought to Makefile 1.48** (v1.0.64): the canonical Makefile went to every extension on 2026-11-02<br>
     **Result**: Makefile 1.48 verbatim; mrproper now removes tmp, logs, .venv, graphify-out, coverage and .pytest_cache, so a later build starts from a clean tree; install and publish are .NOTPARALLEL; the cleaned tree carries the tag CHECKPOINT_JUPYTERLAB_4.6.5_UPGRADE_PORTED_1.0.64. The same day's CI fix ignores the pepy.tech download links in the link check, because the badge service answered 503.
+
+23. **Task - One line under a docked panel title band** (v1.0.66): `--jp-border-color2` now follows the panel background colour `--jp-layout-color2`<br>
+    **Result**: A docked panel showed two lines between its title band and its first section band, seen on the bookmarks panel after its divider above the first section band. `style/variables.css` sets `--jp-border-color2: var(--jp-layout-color2)` in place of `var(--md-grey-800)`, so the panel shows one line. Every `--jp-border-color2` line of the theme is now #3c3f41 in place of #424242; `--jp-border-color0`, `--jp-border-color1` and `--jp-border-color3` are unchanged. A local `make install` built and installed 1.0.65; `make publish` releases 1.0.66.
