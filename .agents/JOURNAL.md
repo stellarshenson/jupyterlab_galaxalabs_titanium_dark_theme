@@ -71,3 +71,6 @@ This journal tracks substantive work on documents, diagrams, and documentation c
 
 23. **Task - One line under a docked panel title band** (v1.0.66): `--jp-border-color2` now follows the panel background colour `--jp-layout-color2`<br>
     **Result**: A docked panel showed two lines between its title band and its first section band, seen on the bookmarks panel after its divider above the first section band. `style/variables.css` sets `--jp-border-color2: var(--jp-layout-color2)` in place of `var(--md-grey-800)`, so the panel shows one line. Every `--jp-border-color2` line of the theme is now #3c3f41 in place of #424242; `--jp-border-color0`, `--jp-border-color1` and `--jp-border-color3` are unchanged. A local `make install` built and installed 1.0.65; `make publish` releases 1.0.66.
+
+24. **Task [Short] - PayPal link ignored in link check** (v1.0.66): added `https://www.paypal.com/.*` to `ignore_links` in `.github/workflows/build.yml`<br>
+    **Result**: The README PayPal donate link answered 403 to the GitHub runner in the Steel Dark theme; pattern copied from Steel Light.
